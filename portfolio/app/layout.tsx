@@ -24,41 +24,70 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-  <body
-    className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-  >
-    <div className="background flex flex-col min-h-screen">
-      {/* Top Formation */}
-      <div className="top-formation">
-        <div className="h-5" />
-        <div className="bg-black h-[120px]" />
-      </div>
+      <body
+        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+      >
+        <div className="background flex flex-col min-h-screen">
 
-      {/* Image Row */}
-      <div className="vertical-formations container mx-auto flex justify-between items-center">
-        <div className="name-image">
-          <img src="/image-name.png" width="500" alt="Name" />
+          {/* Top Formation */}
+          <div className="top-formation">
+            <div className="h-5" />
+            <div className="bg-black h-[120px] border-b border-t" />
+            <div className="h-10" />
+            <div className="menu-block bg-black h-10 border-b border-t"></div>
+          </div>
+
+
+          {/* Image Row */}
+          <div className="vertical-formations container mx-auto flex justify-between items-center">
+            <div className="name-image">
+              <img src="/image-name.png" width="500" alt="Name" />
+            </div>
+            <div className="logo-image">
+              <img src="/image-bight.png" width="270" alt="Bight Logo" />
+            </div>
+          </div>
+
+
+
+
+          {/* Vertical Bars */}
+          <div className="verts container mx-auto min-h-screen justify-between items-center flex">
+            <div className="w-125 bg-black min-h-screen"></div>
+            <div className="w-67 bg-black min-h-screen"></div>
+          </div>
+
+
+
+          {/* Main Content */}
+          <div className="main-box flex-1 w-full absolute top-60 left-0 bottom-25">
+            {/* Steel Bars */}
+
+            <div className="container mx-auto p-11 justify-between items-center flex">
+              <div className="">Title</div>
+              <div className="">About</div>
+              <div className="">Projects</div>
+              <div className="">Contact</div>
+            </div>
+            <div className="container mx-auto p-5 pt-5">
+              <div className="absolute container mx-auto min-h-screen justify-between items-center flex">
+                <div className="steel1 min-h-screen"></div>
+                <div className="steel2 min-h-screen"></div>
+              </div>
+              {children}
+            </div>
+          </div>
+
+          {/* Bottom Bar */}
+          <div className="absolute bottom-5 bg-black h-8 my-5 w-full border-b border-t">
+            <div className="container mx-auto justify-between items-center flex pt-1">
+              <div className="ps-5">Copright &copy; 2025 Brett Grentell.  All Rights Reserved.</div>
+            </div>
+          </div>
+
+
         </div>
-        <div className="logo-image">
-          <img src="/image-bight.png" width="270" alt="Bight Logo" />
-        </div>
-      </div>
-
-      {/* Vertical Bars */}
-      <div className="verts container mx-auto min-h-screen justify-between items-center flex">
-        <div className="w-125 bg-black min-h-screen"></div>
-        <div className="w-68 bg-black min-h-screen"></div>
-      </div>
-
-      {/* Main Content */}
-      <div className="main-box flex-1 w-full absolute top-60 left-0 bottom-25">
-        {children}
-      </div>
-
-      {/* Bottom Bar */}
-      <div className="absolute bottom-5 bg-black h-8 my-5 w-full" />
-    </div>
-  </body>
-</html>
+      </body>
+    </html>
   );
 }

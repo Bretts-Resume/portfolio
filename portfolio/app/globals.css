@@ -30,7 +30,7 @@ body {
   top: 0;
   left: 0;
   width: 100%;
-  z-index: -1;
+  z-index: -2;
 }
 
 .top-black-box {
@@ -41,7 +41,7 @@ body {
 .main-box {
   background-color: #0000ffcc;
   width: 100%;
-  margin-top: -80px;
+  margin-top: -95px;
 }
 
 .bottom-black-box {
@@ -61,10 +61,34 @@ body {
 }
 
 .vertical-formations {
-  margin-top: -90px;
+  margin-top: -40px;
+  z-index: -2;
 }
 
 .verts {
-  margin-top: -243px;
-  z-index: -2
+  margin-top: -174px;
+  z-index: -4;
 }
+
+.personal-image {
+  float:right;
+}
+
+.menu-block {
+  z-index: -1;
+}
+
+.steel1 {
+  background: url('/steel.png');
+  width: 1000px;
+  margin-top: -585px;
+  margin-left: -1150px;
+}
+
+.steel2 {
+  background: url('/steel.png');
+  width: 1000px;
+  margin-top: -585px;
+  margin-right: -1100px;
+}
+
