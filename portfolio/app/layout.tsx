@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-import Link from 'next/link'
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -25,18 +24,41 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
-        <div className="border p-5 w-400 mx-auto mb-5 mt-5">
+  <body
+    className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+  >
+    <div className="background flex flex-col min-h-screen">
+      {/* Top Formation */}
+      <div className="top-formation">
+        <div className="h-5" />
+        <div className="bg-black h-[120px]" />
+      </div>
 
-          <h1>Home</h1>
-          <Link href="/about">About Us</Link>
+      {/* Image Row */}
+      <div className="vertical-formations container mx-auto flex justify-between items-center">
+        <div className="name-image">
+          <img src="/image-name.png" width="500" alt="Name" />
         </div>
-        <div className="border p-5 w-350 mx-auto h-150">
-          {children}
+        <div className="logo-image">
+          <img src="/image-bight.png" width="270" alt="Bight Logo" />
         </div>
-      </body>
-    </html>
+      </div>
+
+      {/* Vertical Bars */}
+      <div className="verts container mx-auto min-h-screen justify-between items-center flex">
+        <div className="w-125 bg-black min-h-screen"></div>
+        <div className="w-68 bg-black min-h-screen"></div>
+      </div>
+
+      {/* Main Content */}
+      <div className="main-box flex-1 w-full absolute top-60 left-0 bottom-25">
+        {children}
+      </div>
+
+      {/* Bottom Bar */}
+      <div className="absolute bottom-5 bg-black h-8 my-5 w-full" />
+    </div>
+  </body>
+</html>
   );
 }

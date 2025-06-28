@@ -1,8 +1,22 @@
 @import "tailwindcss";
 
 :root {
-  --background: #0a0a0a;
-  --foreground: #ededed;
+  --background: #000000;
+  --foreground: #171717;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
 }
 
 body {
@@ -11,6 +25,46 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-.self-photo-large {
-  float: right;
+.top-formation {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: -1;
+}
+
+.top-black-box {
+  border-top: 1px solid white;
+  border-bottom: 1px solid white;
+  position: relative;
+}
+.main-box {
+  background-color: blue;
+  width: 100%;
+  margin-top: -80px;
+}
+
+.bottom-black-box {
+  border-top: 1px solid #d2d2d2;
+  border-bottom: 1px solid #d2d2d2;
+}
+
+.background {
+  background-image: url('/image-circuit-board.png');
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  color: white;
+  z-index: -99;
+  position:  absolute;
+  width: 100vw;
+}
+
+.vertical-formations {
+  margin-top: -90px;
+}
+
+.verts {
+  margin-top: -243px;
+  z-index: -2
 }
