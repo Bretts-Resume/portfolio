@@ -35,8 +35,8 @@ export default function RootLayout({
             <div className="bg-black h-[120px] border-b border-t" >
               <div className="container mx-auto flex p-3">
                 <div className="flex-1"></div>
-                <div className="flex-1">
-                  <ul className="flex space-x-8 mt-8">
+                <div className="flex-1 w-full">
+                  <ul className="flex space-x-4 ms-5 xl:space-x-8 xl:ms-0  mt-8">
                     <li>
                       <svg xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="0 0 24 24" className="w-6 h-6">
                         <path d="M20.452 20.452h-3.756v-5.569c0-1.328-.025-3.037-1.85-3.037-1.853 0-2.137 1.447-2.137 2.942v5.664H8.951V9h3.606v1.561h.05c.502-.951 1.731-1.951 3.563-1.951 3.808 0 4.51 2.505 4.51 5.766v6.076zM5.337 7.433c-1.212 0-2.193-.983-2.193-2.193 0-1.211.981-2.193 2.193-2.193 1.211 0 2.193.982 2.193 2.193 0 1.21-.982 2.193-2.193 2.193zM6.814 20.452H3.861V9h2.953v11.452z" />
