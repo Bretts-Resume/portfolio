@@ -32,7 +32,40 @@ export default function RootLayout({
           {/* Top Formation */}
           <div className="top-formation">
             <div className="h-5" />
-            <div className="bg-black h-[120px] border-b border-t" />
+            <div className="bg-black h-[120px] border-b border-t" >
+              <div className="container mx-auto flex p-3">
+                <div className="flex-1"></div>
+                <div className="flex-1">
+                  <ul className="flex space-x-8 mt-8">
+                    <li>
+                      <svg xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="0 0 24 24" className="w-6 h-6">
+                        <path d="M20.452 20.452h-3.756v-5.569c0-1.328-.025-3.037-1.85-3.037-1.853 0-2.137 1.447-2.137 2.942v5.664H8.951V9h3.606v1.561h.05c.502-.951 1.731-1.951 3.563-1.951 3.808 0 4.51 2.505 4.51 5.766v6.076zM5.337 7.433c-1.212 0-2.193-.983-2.193-2.193 0-1.211.981-2.193 2.193-2.193 1.211 0 2.193.982 2.193 2.193 0 1.21-.982 2.193-2.193 2.193zM6.814 20.452H3.861V9h2.953v11.452z" />
+                      </svg>
+                    </li>
+                    <li>
+                      <svg xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="0 0 24 24" className="w-6 h-6">
+                        <path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.302 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577v-2.04c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.757-1.333-1.757-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.42-1.306.762-1.606-2.665-.3-5.466-1.335-5.466-5.931 0-1.31.468-2.38 1.236-3.22-.124-.302-.536-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.655 1.653.243 2.874.12 3.176.77.84 1.234 1.91 1.234 3.22 0 4.609-2.803 5.628-5.475 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.218.694.825.576C20.565 22.092 24 17.592 24 12.297 24 5.67 18.627.297 12 .297z" />
+                      </svg>
+                    </li>
+                    <li>
+                      <svg xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="0 0 24 24" className="w-6 h-6">
+                        <path d="M7.75 2h8.5A5.75 5.75 0 0 1 22 7.75v8.5A5.75 5.75 0 0 1 16.25 22h-8.5A5.75 5.75 0 0 1 2 16.25v-8.5A5.75 5.75 0 0 1 7.75 2zm0 1.5A4.25 4.25 0 0 0 3.5 7.75v8.5A4.25 4.25 0 0 0 7.75 20.5h8.5a4.25 4.25 0 0 0 4.25-4.25v-8.5A4.25 4.25 0 0 0 16.25 3.5h-8.5zm8.75 2.25a.75.75 0 0 1 .75.75v1a.75.75 0 0 1-1.5 0v-1a.75.75 0 0 1 .75-.75zm-4.5 1.5a5.5 5.5 0 1 1 0 11a5.5 5.5 0 0 1 0-11zm0 1.5a4 4 0 1 0 0 8a4 4 0 0 0 0-8z" />
+                      </svg>
+                    </li>
+                    <li>
+                      <svg xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="0 0 24 24" className="w-6 h-6">
+                        <path d="M20.772 3H17.7l-4.258 5.534L8.78 3H3.21l6.728 9.43L3 21h3.072l4.64-6.042L15.22 21h5.572l-7.006-9.822L20.772 3zM6.437 4.5h1.56l9.56 13.357h-1.56L6.437 4.5z" />
+                      </svg>
+                    </li>
+                    <li>
+                      <svg xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="0 0 24 24" className="w-6 h-6">
+                        <path d="M2 4a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v16a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V4zm2 0v.511l8 6.133 8-6.133V4H4zm16 2.822l-7.445 5.709a1 1 0 0 1-1.11 0L4 6.822V20h16V6.822z" />
+                      </svg>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
             <div className="h-10" />
             <div className="menu-block bg-black h-10 border-b border-t"></div>
           </div>
@@ -60,7 +93,7 @@ export default function RootLayout({
 
 
           {/* Main Content */}
-          <div className="main-box flex-1 w-full absolute top-60 left-0 bottom-25">
+          <div className="main-box flex-1 w-full absolute top-60 left-0 bottom-15">
             {/* Steel Bars */}
 
             <div className="container mx-auto p-11 justify-between items-center flex">
@@ -79,9 +112,11 @@ export default function RootLayout({
           </div>
 
           {/* Bottom Bar */}
-          <div className="absolute bottom-5 bg-black h-8 my-5 w-full border-b border-t">
+          <div className="absolute bottom-5 bg-black h-8 my-0 w-full border-b border-t">
             <div className="container mx-auto justify-between items-center flex pt-1">
               <div className="ps-5">Copright &copy; 2025 Brett Grentell.  All Rights Reserved.</div>
+              <div className="pe-18">web@bight.design</div>
+
             </div>
           </div>
 
