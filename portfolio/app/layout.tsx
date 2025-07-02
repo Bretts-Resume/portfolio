@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Head from 'next/head';
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 
@@ -24,6 +25,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <Head>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+      </Head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
@@ -85,7 +89,7 @@ export default function RootLayout({
 
 
           {/* Vertical Bars */}
-          <div className="verts container mx-auto min-h-screen justify-between items-center flex">
+          <div className="verts container mx-auto min-h-screen justify-between items-center flex hidden sm:flex">
             <div className="w-125 bg-black min-h-screen"></div>
             <div className="w-67 bg-black min-h-screen"></div>
           </div>
@@ -102,7 +106,7 @@ export default function RootLayout({
               <div className="">Projects</div>
               <div className="">Contact</div>
             </div>
-            <div className="container mx-auto p-5 pt-5">
+            <div className="container mx-auto p-5 pt-0">
               <div className="absolute container mx-auto min-h-screen justify-between items-center flex">
                 <div className="steel1 min-h-screen"></div>
                 <div className="steel2 min-h-screen"></div>
@@ -113,9 +117,9 @@ export default function RootLayout({
 
           {/* Bottom Bar */}
           <div className="absolute bottom-5 bg-black h-8 my-0 w-full border-b border-t">
-            <div className="container mx-auto justify-between items-center flex pt-1">
-              <div className="ps-5">Copright &copy; 2025 Brett Grentell.  All Rights Reserved.</div>
-              <div className="pe-18">web@bight.design</div>
+            <div className="container mx-auto justify-between items-center flex pt-1 sm:pt-0">
+              <div className="text-sm md:text-base lg:text-lg ps-5">Copright &copy; 2025 Brett Grentell.  All Rights Reserved.</div>
+              <div className="text-sm md:text-base lg:text-lg pe-18 hidden sm:flex">web@bight.design</div>
 
             </div>
           </div>
