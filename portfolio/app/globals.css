@@ -83,6 +83,7 @@ body {
   width: 1000px;
   margin-top: -585px;
   margin-left: -1150px;
+  display: none;
 }
 
 .steel2 {
@@ -90,4 +91,9 @@ body {
   width: 1000px;
   margin-top: -585px;
   margin-right: -1100px;
+  display: none;
+}
+
+.text-me {
+  background-color: #000000dd;
 }
